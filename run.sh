@@ -1,1 +1,1 @@
-python run.py --prompt "Painting of cute rat that admires itself in the mirror" --seed 1337 --run_name "rat"  # run_name for setting a subfolder to save results
+python run.py --prompt "Painting of cute rat that admires itself in the mirror" --seed 1337 --dir_name "out/run_0"

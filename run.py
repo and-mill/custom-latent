@@ -29,8 +29,7 @@ parser.add_argument('--wandb_experiment_name', default='custom_latent', type=str
 parser.add_argument('--with_wandb', action='store_false', default=True)  # set --no_wandb to disable. Can also set env var WANDB_MODE=dryrun for same effect
 
 # for saving locally
-parser.add_argument('--dir_name', default='out', type=str)  # local experiment directory name
-parser.add_argument('--run_name', default='', type=str)  # local run directory name
+parser.add_argument('--dir_name', default='out', type=str)
 parser.add_argument('--file_prefix', default='run0_', type=str)
 
 # for image distortion
@@ -121,7 +120,6 @@ inv_zT = inv_zT.squeeze(0)
 
 
 # ---------------------------- SAVE to file ----------------------------
-dir_name = args.dir_name + '/' + args.run_name  # local experiment directory name will be created if run_nmae is empty
 os.makedirs(args.dir_name, exist_ok=True)
 
 # images
