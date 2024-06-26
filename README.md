@@ -2,7 +2,7 @@
 
 create wandb account
 
-Fetch an access token from wandb website during wandb login. Think this is needed later for cli-login
+Fetch an access token from wandb website. Think this is needed later for cli-login
 
 ```
 conda create -n "custom_latent_0" python=3.9
