@@ -162,18 +162,18 @@ if args.with_wandb:
 
     # define the output row for this experiment
     row = {'prompt': args.prompt,
-           'latent_RGBA': zT,
-           'latent_ch0': zT[0],
-           'latent_ch1': zT[1],
-           'latent_ch2': zT[2],
-           'latent_ch3': zT[3],
+           'zT_RGBA': zT,
+           'zT_ch0': zT[0],
+           'zT_ch1': zT[1],
+           'zT_ch2': zT[2],
+           'zT_ch3': zT[3],
            'img_before_distortion': img_before_distortion,
            'img': img,
-           'inv_latent_RGBA': inv_zT,
-           'inv_latent_ch0': inv_zT[0],
-           'inv_latent_ch1': inv_zT[1],
-           'inv_latent_ch2': inv_zT[2],
-           'inv_latent_ch3': inv_zT[3],
+           'inv_zT_RGBA': inv_zT,
+           'inv_zT_ch0': inv_zT[0],
+           'inv_zT_ch1': inv_zT[1],
+           'inv_zT_ch2': inv_zT[2],
+           'inv_zT_ch3': inv_zT[3],
            }
 
     wandb.init(project=args.wandb_experiment_name)
